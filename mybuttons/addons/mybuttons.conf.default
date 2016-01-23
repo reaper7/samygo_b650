@@ -1,0 +1,50 @@
+# This is a default config file for SamyGo MyButtons v0.7 plugin
+# change file name for normal use (remove ".default" from file name)
+#
+#-------------------------------------------
+#
+# 1 parameter -> Name of color button (RED,GREEN,YELLOW,BLUE) or BUTTON
+# 2 parameter -> Button caption
+# 3 parameter -> Shell Command/Script to execute
+#                or RCKeys macro
+#                   then correct line must look like this: #750#KEY_MENU.KEY_CUR_DOWN.KEY_CUR_RIGHT.KEY_EXIT
+#                   -where line must start with #
+#                   -first parameter is interval in ms between rcbuttons (min 500, max 5000), closed with # too
+#                   -rcnames to send separated by .
+#                or when 1st parameter is BUTTON/PAUSE then decimal value of prefered key to show MyButtons plugin/Pause funcionality
+#                or when 1st parameter is POPUP then decimal value of visibility 
+# "|" is a separator
+#
+#-------------------------------------------
+#
+# default start by GREEN button
+BUTTON|Start Button|20
+# e.g. start by FAV.CH button
+# BUTTON|Start Button|68
+#
+#-------------------------------------------
+#
+# for live picture pause support simply uncomment PAUSE line 
+# in this config file (You can change default PAUSE key to other the same way as start button)
+# default rc key for execute is PAUSE (for enable simply uncomment lower line)
+# PAUSE|Pause Button|74
+#
+#-------------------------------------------
+#
+# popup window for display result of executed command (check example RED or GREEN buttons)
+# for disable popup simply comment lower line or set 3 parameter to 0
+# values >0 to max 10 sets the popup visible time in seconds
+POPUP|Show Popup|5
+#
+#-------------------------------------------
+#
+RED|Mount List|mount
+GREEN|Disk Free|df -h
+YELLOW|Macro 1|#750#KEY_MENU.KEY_CUR_DOWN.KEY_CUR_DOWN.KEY_CUR_DOWN.KEY_CUR_RIGHT.KEY_CUR_UP.KEY_CUR_RIGHT.KEY_CUR_DOWN.KEY_CUR_DOWN.KEY_CUR_RIGHT.KEY_CUR_UP.KEY_CUR_UP.KEY_ENTER
+RED|OSDcap|/mtd_rwarea/injectso `pidof exeDSP` /dtv/usb/sda/osdcap/loader.so Game_Main /dtv/usb/sda/osdcap/
+GREEN|Make Pen Backup|cp -R /dtv/usb/sda/* /dtv/usb/sda4/dhouse/projects/samsung/pendrive
+RED|Some Scrip 2|/mtd_rwarea/somescript2.sh
+GREEN|Some Scrip 1|/mtd_rwarea/somescript1.sh
+YELLOW|Make Dir|mkdir /dtv/usb/sda/newdir
+BLUE|Remove Dir|rm -rf /dtv/usb/sda/newdir
+

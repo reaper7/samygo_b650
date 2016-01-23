@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentlibrary>
+	<contentpack id="mybuttons">
+		<category>Game</category>
+		<title language_id="English">myButtons</title>
+		<startpoint language_id="English">./loader.so</startpoint>
+		<title language_id="Polish">Moje Przyciski</title>
+		<startpoint language_id="Polish">./loader.so</startpoint>
+		<thumbnailpath>./mybuttons.png</thumbnailpath>
+		<totalsize>1</totalsize>
+	</contentpack>
+</contentlibrary>

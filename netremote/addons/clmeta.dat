@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentlibrary>
+	<contentpack id="netremote">
+		<category>Game</category>
+		<title language_id="English">NetRemote</title>
+		<startpoint language_id="English">./loader.so</startpoint>
+		<title language_id="Polish">NetRemote</title>
+		<startpoint language_id="Polish">./loader.so</startpoint>
+		<thumbnailpath>./netremote.png</thumbnailpath>
+		<totalsize>1</totalsize>
+	</contentpack>
+</contentlibrary>
